@@ -44,12 +44,7 @@ a {
   z-index: 2;
 }
 
-#logo2{ 
-  height: 40px;
-  width: 140px;
-  z-index: 4;
-  margin-top: 10%;
-}
+
 
 .menu {
 	margin-top: 5px;
@@ -86,6 +81,7 @@ a {
   list-style: none;
   overflow: hidden;
   background-color: #fff;
+
 }
 
 
@@ -187,7 +183,7 @@ a {
   top: 0;
 }
 
-/* 48em = 768px */
+/* 48em = 768px  Hamburger*/
 
 @media (min-width: 48em) {
   .header li {
@@ -205,39 +201,41 @@ a {
     display: none;
   }
 
-  #logo2 {
-    display: none;
-  }
-
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
-  #logo2 {
-    display: none;
+  #search-icon {
+    display: hidden;
+  }
+  #cart-icon {
+    display: hidden;
   }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  #logo2 {
-    display: none;
+  .search-text {
+    display: hidden;
   }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (min-width: 768px) {
   #logo {
-    display: none;
+  position:absolute;
+    top:10px; 
+    left:10px;
 }
 }
+
+
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-  #logo {
-  display: none;
-}
+
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {...}
+/* Extra large devices (large laptops and desktops, 1200px and up) 
+@media only screen and (min-width: 1200px) {...} */
+

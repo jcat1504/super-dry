@@ -14,6 +14,15 @@ body {
 	min-height: 100vh;     
 }
 
+#cart-icon {
+  margin-top: 2%;
+  right: 10%;
+}
+
+#search-icon {
+  margin-top: 2%;
+}
+
 #wrapper {
     margin-left:auto;
     margin-right:auto;
@@ -122,32 +131,7 @@ a {
 }
 
 
-/* ================================= 
-  Media Queries
-==================================== */
 
-
-
-
-@media (min-width: 769px) {
-	.header,
-	.menu {
-		display: flex;
-	}
-  
-	.header {
-		flex-direction: column;
-		align-items: center;
-    	/*.header{
-		width: 80%;
-		margin: 0 auto;
-		max-width: 1150px;
-	}
-	}
-*/
-  }
-
-}
   
 /*menu*/
 .header .menu {
@@ -240,59 +224,6 @@ a {
 
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  #search-icon {
-    display: hidden;
-  }
-  #cart-icon {
-    display: hidden;
-  }
-
-
-
- /* .h1-jacket {
-    margin-top: 65%;
-    position: fixed;
-  } */
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
-  #search-text {
-    display: hidden;
-  }
-
-  #cart-icon {
-    display: hidden;
-  }
-}
-
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  #logo {
-  position:absolute;
-    top:10px; 
-    left:10px;
-}
-  #cart-icon {
-    display: hidden;
-  }
-
-}
-
-
-
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
- #search-text {
-   display: hidden;
- }
-}
-
-/* Extra large devices (large laptops and desktops, 1200px and up) 
-@media only screen and (min-width: 1200px) {...} */
-
 /* Ujarak */
 .button--ujarak {
 	-webkit-transition: border-color 0.4s, color 0.4s;
@@ -380,4 +311,47 @@ a {
 	justify-content: center;
   z-index: 120;
 
+}
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+
+
+
+@media (min-width: 769px) {
+	.header,
+	.menu {
+		display: flex;
+	}
+  
+	.header {
+		flex-direction: column;
+		align-items: center;
+  }
+
+  #logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+  }
+
+#search-text {
+  display: none;
+}
+
+#cart-text {
+  display: none;
+}
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+    #search-icon {
+    display: none;
+  }
+
+  #cart-icon {
+    display: none;
+  }
 }

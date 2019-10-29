@@ -21,7 +21,6 @@ body {
     height: 100%;
     position: relative; /*parent div must be relative */
     margin: 0 auto;
-
 }
 
 
@@ -104,7 +103,14 @@ a {
 	border: 1px solid #a2a2a2;
   background-color: #ffffff;
   opacity: .9;
+  width: 100%;
+  top:0;
+  z-index:10;
+  position: absolute;
+  margin:0;
+  overflow:hidden;
 }
+
 
 .header ul {
   margin: 0;
@@ -243,6 +249,8 @@ a {
     display: hidden;
   }
 
+
+
  /* .h1-jacket {
     margin-top: 65%;
     position: fixed;
@@ -251,7 +259,11 @@ a {
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media only screen and (min-width: 600px) {
-  .search-text {
+  #search-text {
+    display: hidden;
+  }
+
+  #cart-icon {
     display: hidden;
   }
 }
@@ -263,6 +275,9 @@ a {
     top:10px; 
     left:10px;
 }
+  #cart-icon {
+    display: hidden;
+  }
 
 }
 
@@ -270,7 +285,9 @@ a {
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
-
+ #search-text {
+   display: hidden;
+ }
 }
 
 /* Extra large devices (large laptops and desktops, 1200px and up) 
@@ -326,23 +343,23 @@ a {
 
 /* Common button styles */
 .button {
-	float: left;
 	min-width: 150px;
 	max-width: 250px;
 	display: flex;
 	margin: 1em;
 	padding: 1em 2em;
 	border: none;
-	background-color: white;
+	background-color: #eee;
 	color: inherit;
-	vertical-align: middle;
 	position: relative;
 	z-index: 1;
 	-webkit-backface-visibility: hidden;
 	-moz-osx-font-smoothing: grayscale;
-  top: 62vh;
+  top: 60vh;
   align-content: center;
   justify-content: center;
+  cursor: pointer;
+    
 }
 .button:focus {
 	outline: none;
@@ -352,6 +369,15 @@ a {
 }
 
 .box-bg-1 {
+	padding: 4.5em 0;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-justify-content: center;
+	justify-content: center;
+  z-index: 120;
 
-    text-align: center;
 }

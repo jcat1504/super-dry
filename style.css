@@ -2,8 +2,8 @@ body {
    background:url(./assets/header-img.jpg) no-repeat center center fixed;
    background-size: cover; 
    position: fixed; 
-  top: 0; 
-  left: 0; 
+   top: 0; 
+   left: 0; 
 	
   /* Preserve aspet ratio */
   min-width: 100%;
@@ -14,13 +14,20 @@ body {
 	min-height: 100vh;     
 }
 
+.right-side {
+  margin-left: 10%;
+
+}
+
+li {
+  margin: 0 5px;
+}
 #cart-icon {
-  margin-top: 2%;
-  right: 10%;
+  margin-top: 1%;
 }
 
 #search-icon {
-  margin-top: 2%;
+  margin-top: 1%;
 }
 
 #wrapper {
@@ -78,12 +85,16 @@ a {
 
 
 #logo {
-  height: 40px;
-  width: 140px;
-  z-index: 2;
+  height: 60px;
+  width: 200px;
+  z-index: 100;
 }
 
+#logo2 {
+  height: 60px;
+  width: 200px;
 
+}
 
 .menu {
 	margin-top: 5px;
@@ -113,6 +124,7 @@ a {
   background-color: #ffffff;
   opacity: .9;
   width: 100%;
+  max-width: 100%;
   top:0;
   z-index:10;
   position: absolute;
@@ -121,15 +133,14 @@ a {
 }
 
 
+
 .header ul {
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
   background-color: #fff;
-
+  overflow: hidden;
 }
-
 
 
   
@@ -137,6 +148,7 @@ a {
 .header .menu {
   clear: both;
   max-height: 0;
+  overflow: hidden;
   transition: max-height .2s ease-out;
 }
 
@@ -318,7 +330,15 @@ a {
 ==================================== */
 
 
+@media (min-width: 1281px) {
+.right-side {
+  margin-left: 90%;
+}
 
+.left-side {
+ float: left;
+}
+}
 
 @media (min-width: 769px) {
 	.header,
@@ -332,9 +352,7 @@ a {
   }
 
   #logo {
-    position: absolute;
-    top: 10px;
-    left: 10px;
+    display:none;
   }
 
 #search-text {
@@ -344,7 +362,16 @@ a {
 #cart-text {
   display: none;
 }
+
+
+
+.right-side {
+  margin-left: 2%;
+  width: 100%;
 }
+}
+
+
 
 @media (min-width: 481px) and (max-width: 767px) {
     #search-icon {
@@ -354,4 +381,19 @@ a {
   #cart-icon {
     display: none;
   }
+
+  #logo2 {
+    display: none;
+  }
 }
+
+
+
+
+
+
+
+
+
+  
+
